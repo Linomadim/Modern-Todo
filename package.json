@@ -39,5 +39,12 @@
     "src/**/*.{js,ts,jsx,tsx}": [
       "eslint --config ./.eslintrc.json --ext js --ext ts --ext jsx --ext tsx"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint",
+      "pre-push": "gulp test:unit",
+      "...": "..."
+    }
   }
 }
