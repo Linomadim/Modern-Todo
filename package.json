@@ -42,8 +42,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "gulp lint",
-      "pre-push": "gulp test:unit",
+      "pre-commit": "eslint",
+      "pre-push": "eslint",
       "...": "..."
     }
   }
