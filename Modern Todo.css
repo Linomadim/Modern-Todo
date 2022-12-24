@@ -163,13 +163,11 @@ body {
     font-size: 16px;
     letter-spacing: 0.045em;
     color: #F9F9F9;
-
     margin-left: 10px;
 }
 
 .link {
     display: flex;
-
     cursor: pointer;
     margin-bottom: 30px;
 }

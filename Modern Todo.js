@@ -87,7 +87,6 @@ class Link {
 
     link.append(icon);
     link.append(name);
-
     link.addEventListener("click", this.onclick);
     return link;
   }
