@@ -5,7 +5,7 @@
   "scripts": {
     "_lint": "eslint --config ./.eslintrc.json --ext js --ext jsx --ext tsx --ext ts",
     "lint-js": "npm run _lint -- ./src/",
-    "lint-jsnpm:fix": "npm run _lint -- --fix ./src/",
+    "lint-js:fix": "npm run _lint -- --fix ./src/",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
     "prepare": "husky install",
     "lint-css": "stylelint src/**/*.css",
