@@ -1,0 +1,31 @@
+.link {
+  display: flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.link_name {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 10px;
+  color: #f9f9f9;
+  font-size: 16px;
+  letter-spacing: 0.045em;
+}
+
+.link_icon {
+  display: flex;
+  align-items: center;
+}
+
+.link_active::after {
+  position: relative;
+  right: auto;
+  display: block;
+  width: 30px;
+  height: auto;
+  background-color: #29a19c;
+  border-radius: 10px 0 0 10px;
+  content: "";
+}
