@@ -1,0 +1,54 @@
+.button {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 8px;
+}
+
+.button_name {
+  font-size: 16px;
+  text-align: center;
+}
+
+.button_icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.Primary {
+  color: rgb(245 241 241);
+}
+
+.None {
+  background-color: #29a19c;
+}
+
+.Warning {
+  background-color: #f05454;
+}
+
+.Error {
+  background-color: #ecca75;
+}
+
+.Secondary_None {
+  color: #29a19c;
+  background-color: transparent;
+  border: 1px solid #29a19c;
+}
+
+.Secondary_Warning {
+  color: #f05454;
+  background-color: transparent;
+  border: 1px solid #f05454;
+}
+
+.Secondary_Error {
+  color: #ecca75;
+  background-color: transparent;
+  border: 1px solid #ecca75;
+}

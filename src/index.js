@@ -1,6 +1,7 @@
 import LinkList from "./components/LinkList/LinkList.js";
 import Link from "./components/Link/Link.js";
 import Icons from "./utils/icons.js";
+import Button from "./components/Buttons/Buttons.js";
 
 const categoriesObj = [
   {
@@ -83,3 +84,91 @@ const exit = new Link({
 });
 const exitHTML = document.querySelector(".sidebar_exit");
 exitHTML.append(exit.render());
+
+const Type = {
+  Primary: "Primary",
+  Secondary: "Secondary",
+};
+
+const State = {
+  None: "None",
+  Warning: "Warning",
+  Error: "Error",
+};
+
+const button1 = new Button({
+  name: "Primary, None  ",
+  type: Type.Primary,
+  state: State.None,
+  onClick: () => true,
+});
+const button2 = new Button({
+  name: "Primary, Error",
+  type: Type.Primary,
+  state: State.Error,
+  onClick: () => true,
+});
+const button3 = new Button({
+  name: "Primary, Warning",
+  type: Type.Primary,
+  state: State.Warning,
+  onClick: () => true,
+});
+
+const button4 = new Button({
+  name: "Secondary , Warning",
+  type: Type.Secondary,
+  state: State.Warning,
+  onClick: () => true,
+});
+
+const button5 = new Button({
+  name: "Secondary, None",
+  type: Type.Secondary,
+  state: State.None,
+  onClick: () => true,
+});
+
+const button6 = new Button({
+  icon: Icons.Button,
+  name: "C иконкой, Primary, None",
+  type: Type.Primary,
+  state: State.None,
+  onClick: () => true,
+});
+
+const button7 = new Button({
+  icon: Icons.Button,
+  name: "C иконкой, Primary, Warning",
+  type: Type.Primary,
+  state: State.Warning,
+  onClick: () => true,
+});
+
+const button8 = new Button({
+  icon: Icons.Button,
+  name: "C иконкой, Secondary, None",
+  type: Type.Secondary,
+  state: State.None,
+  onClick: () => true,
+});
+
+const button9 = new Button({
+  icon: Icons.Button,
+  name: "C иконкой, Secondary, Warning",
+  type: Type.Secondary,
+  state: State.Warning,
+  onClick: () => true,
+});
+
+const domContent = document.querySelector(".content");
+
+domContent.append(button1.render());
+domContent.append(button2.render());
+domContent.append(button3.render());
+domContent.append(button4.render());
+domContent.append(button5.render());
+domContent.append(button6.render());
+domContent.append(button7.render());
+domContent.append(button8.render());
+domContent.append(button9.render());
